@@ -1,0 +1,15 @@
+{
+  "name": "dish-list",
+  "version": "1.0.0",
+  "description": "Dish-list for menu-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@polymer/lit-element": "^0.7.1",
+    "@vaadin/vaadin-ordered-layout": "^1.1.0"
+  }
+}
