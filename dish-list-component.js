@@ -27,6 +27,10 @@ export class DishListComponent extends LitElement {
         }
     }
 
+    __dishSelected() {
+        this.dispatchEvent(new Event('dish-selected'));
+    }
+
     render() {
             return html `
             <style is="custom-style">
@@ -68,7 +72,7 @@ export class DishListComponent extends LitElement {
                         ${this.dishList.map(dish => html`
                             <paper-card>
                                 <div class="card-content">
-                                    <paper-button class="info">${dish.name}</paper-button>
+                                    <paper-button id="${dish.id}" @click="${this.__dishSelected}" class="info">${dish.name}</paper-button>
                                     <rate-component rate="${dish.rate}"></rate-component>
                                 </div>
                             </paper-card>
