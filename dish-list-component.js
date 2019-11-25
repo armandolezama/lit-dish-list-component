@@ -69,7 +69,7 @@ export class DishListComponent extends LitElement {
                             <paper-card>
                                 <div class="card-content">
                                     <paper-button class="info">${dish.name}</paper-button>
-                                    <rating-component rate="${dish.rate}"></rating-component>
+                                    <rate-component rate="${dish.rate}"></rate-component>
                                 </div>
                             </paper-card>
                 
